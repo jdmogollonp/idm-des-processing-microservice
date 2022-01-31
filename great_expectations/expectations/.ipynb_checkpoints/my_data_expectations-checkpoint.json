@@ -1,0 +1,223 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "my_data_expectations",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column_set": [
+          "PatientNumber",
+          "date",
+          "stage",
+          "activity",
+          "TriagePriority"
+        ],
+        "exact_match": true
+      },
+      "meta": {
+        "notes": {
+          "content": "Column names are case sentisitive",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber",
+        "type_": "int"
+      },
+      "meta": {
+        "notes": {
+          "content": "PatientNumber should be an integer value",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "activity",
+        "type_": "str"
+      },
+      "meta": {
+        "notes": {
+          "content": "activity should be a string value",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "stage",
+        "type_": "str"
+      },
+      "meta": {
+        "notes": {
+          "content": "stage should be a string value",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "date",
+        "type_": "string"
+      },
+      "meta": {
+        "notes": {
+          "content": "data should be a  string in yyyy-MM-dd HH:mm:ss format ",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_of_type",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "TriagePriority",
+        "type_": "str"
+      },
+      "meta": {
+        "notes": {
+          "content": "TriagePriority should be a string value",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber",
+        "mostly": 1
+      },
+      "meta": {
+        "notes": {
+          "content": "This data column cannot contain missing values.",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "stage",
+        "mostly": 1
+      },
+      "meta": {
+        "notes": {
+          "content": "This data column cannot contain missing values.",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "date",
+        "mostly": 1
+      },
+      "meta": {
+        "notes": {
+          "content": "This data column cannot contain missing values.",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "activity",
+        "mostly": 1
+      },
+      "meta": {
+        "notes": {
+          "content": "This data column cannot contain missing values.",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "TriagePriority",
+        "mostly": 1
+      },
+      "meta": {
+        "notes": {
+          "content": "This data column cannot contain missing values.",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "TriagePriority",
+        "mostly": 1,
+        "value_set": [
+          "Orange",
+          "Vert",
+          "Rouge"
+        ]
+      },
+      "meta": {
+        "notes": {
+          "content": "Expected severity index values are:Orange,Vert,Rouge",
+          "format": "markdown"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "activity",
+        "mostly": 1,
+        "value_set": [
+          "TriageStartDateTime",
+          "TriageEndDateTime",
+          "biochimieBAStartDateTime",
+          "biochimieTakeBADateTime",
+          "biochimieResultBADateTime",
+          "hematologieBAStartDateTime",
+          "hematologieTakeBADateTime",
+          "hematologieResultBADateTime",
+          "coagulationBAStartDateTime",
+          "coagulationTakeBADateTime",
+          "coagulationResultBADateTime",
+          "RXPrescriptionDateTime",
+          "RXRealizationDateTime",
+          "RMIRealizationDateTime",
+          "RMIResultBADateTime",
+          "biochimeBAStartDateTime",
+          "biochimeTakeBADateTime",
+          "biochimeResultBADateTime"
+        ]
+      },
+      "meta": {
+        "notes": {
+          "content": " Expected event values are TriageStartDateTime, TriageEndDateTime,biochimieBAStartDateTime,biochimieTakeBADateTime,\n                    biochimieResultBADateTime, hematologieBAStartDateTime,  hematologieTakeBADateTime,\n                                                                    hematologieResultBADateTime,  coagulationBAStartDateTime,coagulationTakeBADateTime,\n                                                                    coagulationResultBADateTime, RXPrescriptionDateTime,RXRealizationDateTime,\n                                                                    RMIRealizationDateTime,RMIResultBADateTime,biochimeBAStartDateTime,\n                                                                    biochimeTakeBADateTime, biochimeResultBADateTime ",
+          "format": "markdown"
+        }
+      }
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.13.38"
+  }
+}

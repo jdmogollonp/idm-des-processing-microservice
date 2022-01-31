@@ -1,0 +1,339 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "data_expectations",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column_list": [
+          "PatientNumber",
+          "date",
+          "stage",
+          "activity"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "max_value": 6358,
+        "min_value": 6358
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber",
+        "max_value": 1,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber",
+        "max_value": 795,
+        "min_value": 795
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber",
+        "max_value": 395.3766907832652,
+        "min_value": 395.3766907832652
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber",
+        "max_value": 401.0,
+        "min_value": 401.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "allow_relative_error": "lower",
+        "column": "PatientNumber",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              37,
+              37
+            ],
+            [
+              195,
+              195
+            ],
+            [
+              401,
+              401
+            ],
+            [
+              597,
+              597
+            ],
+            [
+              749,
+              749
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber",
+        "max_value": 0.12503932054105066,
+        "min_value": 0.12503932054105066
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "PatientNumber",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "INTEGER",
+          "INT64",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "date"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "date",
+        "max_value": 0.5508021390374331,
+        "min_value": 0.5508021390374331
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "date",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "stage",
+        "value_set": [
+          "arrival",
+          "blood_analysis",
+          "rmi_scan",
+          "rx",
+          "triage"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "stage"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "stage",
+        "max_value": 0.0007864108210128972,
+        "min_value": 0.0007864108210128972
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "stage",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "activity",
+        "value_set": [
+          "RMIRealizationDateTime",
+          "RMIResultBADateTime",
+          "RXPrescriptionDateTime",
+          "RXRealizationDateTime",
+          "TriageEndDateTime",
+          "TriageStartDateTime",
+          "arrival",
+          "biochimeBAStartDateTime",
+          "biochimeResultBADateTime",
+          "biochimeTakeBADateTime",
+          "biochimieBAStartDateTime",
+          "biochimieResultBADateTime",
+          "biochimieTakeBADateTime",
+          "coagulationBAStartDateTime",
+          "coagulationResultBADateTime",
+          "coagulationTakeBADateTime",
+          "hematologieBAStartDateTime",
+          "hematologieResultBADateTime",
+          "hematologieTakeBADateTime"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "activity"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "activity",
+        "max_value": 0.0029883611198490093,
+        "min_value": 0.0029883611198490093
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "activity",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "NTEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str",
+          "object",
+          "dtype('O')"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "columns": {
+      "PatientNumber": {
+        "description": ""
+      },
+      "activity": {
+        "description": ""
+      },
+      "date": {
+        "description": ""
+      },
+      "stage": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.38"
+  }
+}
